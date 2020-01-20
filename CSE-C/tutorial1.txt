@@ -1,7 +1,7 @@
                                      Tutorial - 1
 
 1. Install XAMPP and configure it for your system. You may use any OS you wish to use.
-2. Create a database with name "CSEB" and after that create a table with name users using
+2. Create a database with name "CSEC2020" and after that create a table with name users using
    PHP MyAdmin. users table should have following columns - id, name, age, contact, email.
 3. Create a PHP file that prints "Welcome to Graphic Era!".
 4. Create two JavaScript variables firstName and lastName. Get these inputs from browser and then
