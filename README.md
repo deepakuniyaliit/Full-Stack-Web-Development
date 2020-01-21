@@ -11,7 +11,7 @@ How should you use resources available here -
      focus on solving these tutorials.
 
 
-Note - In case of any doubt, clarification or suggestion, please contact deepak.uniyal08@gmail.com
+Note - In case of any doubt, clarification or suggestion, please contact deepakuniyal@geu.ac.in
 Deepak Uniyal
 Assistant Professor, CSE
 Graphic Era Deemed To Be University
