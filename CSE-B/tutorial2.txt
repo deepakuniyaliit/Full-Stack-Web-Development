@@ -1,0 +1,21 @@
+			Tutorial - 2
+
+1. Create a web application that takes user's id, name, age, 
+   contact, and email from web portal using a PHP script and
+   shows that on a web page.
+
+2. Extend the application to store the data entered through
+   portal into database (CSEB2020).
+
+3. Once you have saved data to the database, read the data
+   through a PHP script and show it on the web page.
+
+4. Extend the application to show the data on web page in 
+   form of a neat and clean table with dashed border for 
+   every row and column.
+   Example - 
+            --------------
+            |Id    |Name  |
+	    |______|______|
+            |1     |Deepak|
+	    |______|______|
