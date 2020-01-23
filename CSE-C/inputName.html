@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Welcome Page</title> 
+</head>
+
+<body>
+    FirstName: <input id='first' type="text" placeholder="Enter First Name"><br>
+    LastName: <input id='last' type="text" placeholder="Enter Last Name"><br>
+    <input id='btn' type="submit">
+    
+    <script type="text/javascript">
+        
+        document.getElementById('btn').ondblclick = function(){
+            f = document.getElementById('first').value;
+            l = document.getElementById('last').value;
+            console.log('Welcome, '+f+' '+l);
+        }    
+    </script>
+</body>
+</html>
