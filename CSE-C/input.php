@@ -1,11 +1,15 @@
 <?php
-echo $_POST['id'].'<br>';
-echo $_POST['username'].'<br>';
-echo $_POST['age'].'<br>';
-echo $_POST['contact'].'<br>';
-echo $_POST['email'].'<br>';
+if(isset($_POST['submit'])){
+    echo 'ID - '.$_POST['id'].'<br>';
+    echo 'UserName - '.$_POST['username'].'<br>';
+    echo 'Age - '.$_POST['age'].'<br>';
+    echo 'Contact - '.$_POST['contact'].'<br>';
+    echo 'Email - '.$_POST['email'].'<br>';
+}
+else{
+    echo "Welcome, Guest!";
+}
 ?>
-
 
 <html>
 <head><title>Input Data</title></head>
@@ -16,7 +20,7 @@ echo $_POST['email'].'<br>';
       UserName - <input name="username" type="text" placeholder="Enter Username"><br>
       Age - <input name="age" type="text" placeholder="Enter Age"><br>
       Contact - <input name="contact" type="text" placeholder="Enter Contact"><br>
-      EMail - <input name="email" type="text" placeholder="Enter E-Mail"><br>
+      EMail - <input name="email" type="email" placeholder="Enter E-Mail"><br>
       <input name="submit" type="submit">
     </form>
 </body>
