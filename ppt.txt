@@ -1,0 +1,13 @@
+	     Presentation on Understanding of Full Stack Web Development 
+             -----------------------------------------------------------
+
+You need to create a 10 minutes presentation on your understanding of one of the 
+following topics, which you will be presenting in next lab session. You could 
+have a group of 2 to 4 students in a group. 
+
+1. Full Stack Web Development
+2. Frontend and Backend Technologies
+3. Client Server Arthitecture
+4. Git and GitHub
+5. LAMP Stack and MEAN Stack
+6. Project Idea - Our Team Would Like to Work On
