@@ -13,6 +13,7 @@ include_once('config.php');
         
     if(mysqli_query($conn, $sql)){
         echo 'Data inserted successfully...';
+        header("Location:details.php");
     }
         else{
             echo 'Data insertion failed...'.mysqli_error($conn) ;
