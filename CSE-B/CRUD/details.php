@@ -34,7 +34,7 @@ if($result->num_rows > 0){
         <td><?php echo $data['contact']; ?></td>
         <td><?php echo $data['email']; ?></td>
         <td> <a href="edit.php?id=<?php echo $data['id'];?>">Edit</a> </td>
-        <td>Delete</td>
+        <td> <a href="delete.php?id=<?php echo $data['id'];?>">Delete</a></td>
     </tr>
     <?php } ?>
     </tbody>
