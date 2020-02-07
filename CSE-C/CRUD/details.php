@@ -31,7 +31,7 @@ if ($result->num_rows > 0){
         <td><?php echo $row['age']; ?></td>
         <td><?php echo $row['contact']; ?></td>
         <td><?php echo $row['email']; ?></td>
-        <td><a href="edit.php">Edit</a></td>
+        <td><a href="edit.php?id=<?php echo $row['id']; ?>">Edit</a></td>
         <td><a href="delete.php">Delete</a></td>
     </tr>  
 <?php    }
