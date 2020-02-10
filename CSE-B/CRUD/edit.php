@@ -48,6 +48,3 @@ else{
     </form>
     </body>
 </html>
-
-
-58, 61, 64
