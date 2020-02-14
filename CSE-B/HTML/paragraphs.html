@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Paragraphs Content Exchange Program</title>
+    </head>
+    <body>
+        <p id="para1">Paragraph1</p>
+        <p id="para2">Paragraph2</p>
+        <input type="button" id="btn" value="Swap Content">
+        
+        <script type="text/javascript">
+            document.getElementById('btn').onclick = function(){
+                p1 = document.getElementById('para1');
+                p2 = document.getElementById('para2');
+                var p1Content = p1.innerText;
+                var p2Content = p2.innerText;
+                p1.innerText = p2Content;
+                p2.innerText = p1Content;
+            }
+        </script>
+    </body>
+</html>
