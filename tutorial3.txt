@@ -1,0 +1,14 @@
+                                     Tutorial - 1
+
+1. Create a Java Script program that takes two numbers using prompt box, adds them and 
+   shows their sum using alert box.
+2. Write a program that swaps the content of two paragraphs when a button is clicked.
+3. Write a JS program that generates random colors and fills a circle using those colors.
+4. Design a resume using HTML and CSS as given by IIT Bombay format (see overleaf). You 
+   should use following HTML elements and attriutes - table, ul, ol, div, padding, margin.
+   Please keep in mind that resume should have equal margin from left and right side of 
+   the page.
+5. Create a program that generates random numbers in the range low to high.
+   Hint - You should use Math.random().
+6. Write a JS program that calculates all the prime numbers less than N, where N is 
+   provided by user.
