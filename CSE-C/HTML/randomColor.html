@@ -7,6 +7,10 @@
             height: 200px;
             background-color: red;
             border-radius: 50%;
+            
+            border-width: 2px;
+            border-color: black;
+            border-style:groove;
         }
     </style>
 </head>
@@ -19,14 +23,18 @@
         function randomColorGeneration(){
             numbers = "123456789ABCDEF";
             color = "#";
+            console.log(color);
             for(var i=1; i<=6; i++){
-                color = color + numbers[Math.ceil(Math.random()*15)];
+                random = Math.ceil(Math.random()*14);
+                color = color + numbers[random];
+                console.log(random);
             }
             return color;
         }
         
         document.getElementById('circle').onclick = function(){
            color = randomColorGeneration();
+           console.log('returned Color - '+color);
            circle = document.getElementById('circle');
            circle.style.backgroundColor = color;
         }
