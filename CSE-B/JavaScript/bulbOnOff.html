@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Random Image Generation</title>
+    <style>
+    </style>
+</head>
+<body>
+    <img src="lightBulbOn.jpg" id="img" width="200px" height="300px">
+    <input type="button" value="OFF" id="toggle">
+    <script type="text/javascript">
+    
+    document.getElementById('toggle').onclick = function(){
+        onOff = document.getElementById('toggle').value;
+        if (onOff == 'ON'){
+             document.getElementById('img').src="lightBulbOn.jpg";
+             document.getElementById('toggle').value = 'OFF';
+        }
+        else{
+             document.getElementById('img').src="lightBulbOff.jpg";
+             document.getElementById('toggle').value = 'ON';
+        }
+    }
+    </script>
+</body>
+</html>
