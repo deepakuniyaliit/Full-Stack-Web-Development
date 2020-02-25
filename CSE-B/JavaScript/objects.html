@@ -1,0 +1,53 @@
+<html>
+<head></head>
+<body>
+    <script>
+        //Method-1
+        var first = 'Deepak';
+        var last = 'Uniyal';
+        var greet = function(){
+            //Local Scope so can't be accessed outside this function
+            var f = 'JavaScript';
+            console.log(first+' '+last);
+            console.log(f);
+        }
+        
+        //Method-2
+        var du = new Object();
+        du.first = 'Deepak';
+        du.last = 'Uniyal';
+        du.greet = function(){
+            console.log(du.first+' '+du.last);
+        }
+        
+        //Method-3
+        var js = {};
+        js.first = 'Deepak';
+        js.last = 'Uniyal';
+        js.greet = function(){
+            console.log(this.first+' '+this.last);
+        }
+        
+        //Method-4
+        var cs = {
+            first:'Deepak',
+            last:'Uniyal',
+            greet:function(){
+                console.log(this.first+' '+this.last);
+            }
+        };
+        
+        
+        function createPerson(firstName, lastName){
+            return {
+            first:firstName,
+            last:lastName,
+            greet:function(){
+                console.log(this.first+' '+this.last);
+            }
+        };
+        }
+        
+    </script>
+</body>
+</html>
