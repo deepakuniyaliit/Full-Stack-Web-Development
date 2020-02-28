@@ -1,0 +1,53 @@
+<html>
+<head>
+    
+</head>
+<body>
+    <script type="text/javascript">
+    //Method-1
+    var firstName = 'Deepak'
+    var lastName = 'Uniyal'
+    var greet = function(){
+        console.log('Hello, '+firstName +' '+lastName);
+    }
+    
+    //Method-2
+    var du = new Object();
+    du.first = 'Deepak';
+    du.last = 'Uniyal';
+    du.greet = function(){
+        console.log('Hello, '+du.first +' '+du.last);
+    }
+    
+    //Method-3
+    var du = {};
+    du.first = 'Deepak';
+    du.last = 'Uniyal';
+    du.greet = function(){
+        console.log('Hello, '+this.first +' '+this.last);
+    }
+    
+    //Method-4
+    var du = {
+        first: 'Deepak',
+        last: 'Uniyal',
+        greet: function(){
+            console.log('Hello, '+this.first +' '+this.last);
+        }
+    };
+    
+        
+    //Method-5
+    function createPerson(first,last){
+        return {
+        first: first,
+        last: last,
+        greet: function(){
+            console.log('Hello, '+this.first +' '+this.last);
+        }
+    };
+    }
+        
+    </script>
+</body>
+</html>
