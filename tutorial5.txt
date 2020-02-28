@@ -1,0 +1,13 @@
+                    Tutorial-5
+
+1. Count occurrences of substrings in a string.
+2. Find out the file name from URL in browser.
+3. What is a closure in JavaScript?
+   Explain using an example.
+4. What is the difference between JavaScript and ECMA Script.
+   Explain some new features added in ES-6 or ES-2015.
+5. Create a function that returns an anonymous object (Student) having following attributes and methods -
+   Attributes - firstName, lastName, enrollmentNo, phoneNo, branch, subjectWiseMarks
+   Methods - getFullName(), setPhoneNo(), getMarks(subject), getStatus()
+   setPhoneNo() - Should set the phone no. only, if it contains all the characters are digits. Length of phone number should be exactly 10.
+   getStatus() - returns Fail if < 40%, Distinction if >= 75% and Pass otherwise.
