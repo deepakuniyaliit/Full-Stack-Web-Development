@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <name>Suhaib</name>
+        <course>B.Tech.</course>
+        <city>Jammu</city>
+        <contact>9867563425</contact>
+    </student>
+        
+    <student>
+        <name>Nipun</name>
+        <course>M.Tech.</course>
+        <city>Dehradun</city>
+        <contact>9867566785</contact>
+    </student>
+</students>

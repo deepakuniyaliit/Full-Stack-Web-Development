@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<students>
+    <student>
+        <name>Amit</name>
+        <enrollment>123</enrollment>
+        <contact>9897</contact>
+        <city>Dehradun</city>
+    </student>
+    
+    <student>
+        <name>Arun</name>
+        <enrollment>456</enrollment>
+        <contact>7867</contact>
+        <city>Delhi</city>
+    </student>
+    
+</students>
