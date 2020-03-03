@@ -1,0 +1,49 @@
+<html>
+<head>
+</head>
+    <style>
+        div{
+            margin-left: 40%;
+            margin-top: 30%;
+        }
+        button{
+            width:200px;
+            height: 50px;
+            background-color: cadetblue;
+            color: white;
+            border-radius: 10px;;
+            font-family: monospace;
+            font-size: 15px;
+        }
+        button:hover{
+            background-color: green;
+        }
+        P{
+            padding-left: 40px;
+        }
+    </style>
+    
+    <body>
+        <div>
+        <p><strong>Javascript Timers</strong></p>
+        <p></p>
+        <button id="btn1" onclick="createAlert();">Call Alert Every 5 Seconds</button>
+        <p></p>
+        <button id="btn2" onclick="cancelAlert();">Cancel the Alert Event</button>
+        </div>
+        
+        <script type="text/javascript">
+        var timeOut;
+        function createAlert(){
+           timeOut = setTimeout(alert, 5000, 'Hi');
+           //timeOut = setInterval(alert, 5000, 'Hi');
+        }
+            
+        function cancelAlert(){
+            clearTimeout(timeOut);
+            //clearInterval(timeOut);
+        }
+        
+        </script>
+    </body>
+</html>
