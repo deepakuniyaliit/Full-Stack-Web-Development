@@ -1,0 +1,40 @@
+<html>
+<head>
+</head>
+<body>
+    <strong>Arrays</strong>
+    <a href="timers.html"><img src="lightBulbOff.jpg" style="width: 70px; height: 100px;"> </a>
+    <script type="text/javascript">
+        var array1 = [1,2,3,4,5,6];
+        console.log(array1);
+        //Insert element at the end
+        array1.push(7);
+        array1.push(8,9,10);
+        console.log(array1);
+        //Delete element from the end
+        array1.pop();
+        console.log(array1);
+        //Delete element from the starting
+        array1.shift();
+        console.log(array1);
+        //Add an element to the starting of the array
+        array1.unshift(100,200);
+        console.log(array1);
+        console.log("Length - "+array1.length);
+        
+        array1.splice(2,4,300,400,500,600);
+        console.log(array1);
+        
+        //Print array using a for loop
+        for(var i=0; i<array1.length; i++){
+            console.log('index - '+i+" Element - "+array1[i]);
+        }
+        
+        //foreach loop
+        function printArray(item,index){
+            console.log(index + " => " +item);
+        }
+        array1.forEach(printArray);
+    </script>
+</body>
+</html>
