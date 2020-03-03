@@ -1,0 +1,45 @@
+<html>
+<body>
+    <strong>JavaScript Arrays</strong>
+    <script>
+        a1 = [1,2,3,4,5];
+        console.log(a1);
+        //Insert at the end
+        a1.push(6);
+        a1.push(7);
+        console.log(a1);
+        a1.push(8,9,10);
+        console.log(a1);
+        //Delete from end
+        a1.pop();
+        a1.pop();
+        console.log(a1);
+        
+        //Delete from beginning
+        a1.shift();
+        a1.shift();
+        console.log(a1);
+        
+        //Insert at beginning
+        a1.unshift(100,200,300);
+        console.log(a1);
+        console.log(a1.length);
+        //Splice
+        a1.splice(3,3,400,500,600);
+        console.log(a1);
+        
+        //Print Array
+        for(var i=0; i<a1.length; i++){
+            console.log(i+"=>"+a1[i]);
+        }
+        
+        //foreach loop
+        console.log('Using foreach loop....');
+        function printArray(item, index){
+            console.log(index+"=>"+item);
+        }
+        
+        a1.forEach(printArray);
+    </script>
+</body>
+</html>
