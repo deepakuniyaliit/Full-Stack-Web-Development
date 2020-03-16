@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML-5</title>
+    <style>
+        button{
+            height: 100px;
+            width: 100px;
+            font-size: 20;
+        }
+    </style>
+</head>
+    <body>
+        <form action="" method="post">
+            <label for="username">UserName</label>
+            <input type="text" name="user" id="username"><br>
+            <label for="mail">E-Mail</label>
+            <input type="email" name="email" id="mail"><br>
+            Range - 
+            <input type="range" min="0" max="10" step="2" name="range"><br>
+            Date - 
+            <input type="date" name="date"><br>
+            File Input - 
+            <input type="file" name="Browse"><br>
+            
+            <select name="select">
+            <option>ABCD</option>
+            <option selected>XYZ</option>
+            </select> <br>
+            Gender -<br> 
+            Male - <input type="radio" name="gender" value="male">
+            Female -<input type="radio" name="gender" value="female"><br>
+            
+            <audio controls>
+            <source src="SampleAudio.mp3" type="audio/mpeg">
+            </audio>
+            <br>
+            <input type="submit" name="submit">
+        </form>
+        <button id="btn">Play</button>
+        <video src="SampleVideo.mp4" height="600px" width="600px" autoplay id="video"></video>
+        
+        <script type="text/javascript">
+        play = document.querySelector('#btn')
+        play.addEventListener('click', function(){
+            v = document.querySelector('#video');
+            if (v.paused){
+                v.play();
+                play.textContent = 'Pause';
+            }
+            else{
+                v.pause();
+                play.textContent = 'Play';
+            }
+            
+        })
+        
+        </script>
+    </body>
+</html>
