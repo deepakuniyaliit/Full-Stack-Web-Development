@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML-5</title>    
+</head>
+<body>
+    <form action="" method="get">
+        <input type="date" id="dt" name="date"><br>
+        <input type="email" name="email"><br>
+        <input type="range" min="0" max="10" step="2" value="2" name="range"><br>
+        <select name="select">
+            <option selected>abcd</option>
+            <option>xyz</option>
+        </select>
+        <br>
+        <label for="radio">Radio Button</label>
+        <input type="radio" value="male" name="gender">
+        <input type="radio" value="female" name="gender">
+        <br>
+        <audio controls id="audio">
+        <source src="SampleAudio.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        
+        <br>
+        <input type="file">
+        <input type="submit" name="btn">
+        
+    </form>
+    <video src="SampleVideo.mp4" width="700px" height="500px" id="video">
+    </video><br>
+    <button id="play">Play</button>
+    
+    <script type="text/javascript">
+    document.querySelector('#play').addEventListener('click', function(){
+        var v = document.querySelector('#video');
+        control = document.getElementById('play')
+        if (v.paused){
+            control.textContent = 'Pause';
+            v.play();
+        }
+        else{
+            control.textContent = 'Play';
+            v.pause();
+        }
+        
+    })
+    
+    </script>
+</body>
+</html>
