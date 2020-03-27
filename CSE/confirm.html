@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Confirm Box</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        var visit = window.confirm('Do You Want to Visit Google.Com?')
+        if (visit){
+            //window.open('https://www.google.com','_top')
+            window.location.href="https://www.google.com"
+        }
+        else{
+            console.log('You Cancelled the Event');
+        }
+    </script>
+</body>
+</html>
