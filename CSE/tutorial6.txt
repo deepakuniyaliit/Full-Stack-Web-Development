@@ -1,0 +1,9 @@
+                                     Tutorial - 6
+
+1. Use confim box in JavaScript to visit a website only when user clicks Ok and prints a message    when user presses cancel. 
+2. Create a Java Script program that takes two numbers using prompt box, adds them and 
+   shows their sum using alert box.
+3. Write a program that swaps the content of two paragraphs when a button is clicked.
+4. Create a program that generates random numbers in the range low to high.
+   Hint - You should use Math.random().
+5. Write a JS program that generates random colors and fills a circle using those colors.
