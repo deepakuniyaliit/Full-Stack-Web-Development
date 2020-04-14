@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Random Color Generation</title>
+    <style type="text/css">
+        #circle{
+            width: 200px;
+            height: 200px;
+            background-color: #ABCDEF;
+            border-color: black;
+            border-radius: 50%;
+            border-style: dashed;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <script type="text/javascript">
+        function randomColorGeneration(){
+            colors = "123456789ABCDEF";
+            color = '#';
+
+            for(var i=0; i<6; i++){
+                random = Math.ceil(Math.random()*14);
+                color = color + colors[random];
+            }
+            console.log(color);
+            return color;
+        }
+
+        circle = document.getElementById('circle');
+        circle.onclick = function(){
+            color = randomColorGeneration();
+            circle.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
