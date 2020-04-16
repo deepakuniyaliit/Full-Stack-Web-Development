@@ -3,9 +3,13 @@
 <HEAD>
 <TITLE>HTML TABLES</TITLE>
     <style type="text/css">
+        table{
+            width: 50%;
+        }
         table, tr, th, td{
             border-collapse: collapse;
             text-align: left;
+            border: 1px solid black;
         }
         .topBottomBorder{
             border-top: 1px solid black;
@@ -14,18 +18,16 @@
         .bottomBorder{
             border-bottom: 1px solid black;
         }
-        th{
-            color: cadetblue;
-        }
     </style>
 </HEAD>
 <BODY>
     <table>
+        <col style="width: 30%">
         <col style="width: 20%">
         <col style="width: 20%">
-        <col style="width: 20%">
-        <col style="width: 20%">
-        <col style="width: 20%">
+        <col style="width: 15%">
+        <col style="width: 15%">
+        <caption>Academic Details</caption>
         <thead>
             <tr class="topBottomBorder">
                 <th>Examination</th>
@@ -33,35 +35,31 @@
                 <th>Branch</th>
                 <th colspan="2">Year/CPI</th>
             </tr>
-        
         </thead>
         <tbody>
             <tr>
-                <td rowspan="2">Post Graduate Specialization:</td>
+                <td rowspan="2">Post Graduation</td>
                 <td>IITB</td>
                 <td>CSE</td>
                 <td>2012</td>
-                <td>8.0</td>
-            </tr>
-            
-            <tr>
-                
-                <td>IITD</td>
-                <td>EC</td>
-                <td>2014</td>
                 <td>8.85</td>
             </tr>
             
-            <tr class="bottomBorder">
-                <td>Under Graduate:</td>
-                <td>IITR</td>
-                <td>ME</td>
-                <td>2016</td>
-                <td>9.6</td>
+            <tr>
+                <td>IITD</td>
+                <td>IT</td>
+                <td>2014</td>
+                <td>9.20</td>
             </tr>
-        
+            
+            <tr class="bottomBorder">
+                <td>Under Graduation</td>
+                <td>IITR</td>
+                <td>Data Science</td>
+                <td>2016</td>
+                <td>9.8</td>
+            </tr>
         </tbody>
     </table>
-
 </BODY>
 </HTML>
