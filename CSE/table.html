@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>HTML TABLES</TITLE>
+    <style type="text/css">
+        table, tr, th, td{
+            border-collapse: collapse;
+            text-align: left;
+        }
+        .topBottomBorder{
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .bottomBorder{
+            border-bottom: 1px solid black;
+        }
+        th{
+            color: cadetblue;
+        }
+    </style>
+</HEAD>
+<BODY>
+    <table>
+        <col style="width: 20%">
+        <col style="width: 20%">
+        <col style="width: 20%">
+        <col style="width: 20%">
+        <col style="width: 20%">
+        <thead>
+            <tr class="topBottomBorder">
+                <th>Examination</th>
+                <th>University</th>
+                <th>Branch</th>
+                <th colspan="2">Year/CPI</th>
+            </tr>
+        
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Post Graduate Specialization:</td>
+                <td>IITB</td>
+                <td>CSE</td>
+                <td>2012</td>
+                <td>8.0</td>
+            </tr>
+            
+            <tr>
+                
+                <td>IITD</td>
+                <td>EC</td>
+                <td>2014</td>
+                <td>8.85</td>
+            </tr>
+            
+            <tr class="bottomBorder">
+                <td>Under Graduate:</td>
+                <td>IITR</td>
+                <td>ME</td>
+                <td>2016</td>
+                <td>9.6</td>
+            </tr>
+        
+        </tbody>
+    </table>
+
+</BODY>
+</HTML>
