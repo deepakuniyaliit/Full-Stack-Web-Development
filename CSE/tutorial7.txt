@@ -1,0 +1,14 @@
+                                     Tutorial - 6
+
+1. What do you mean by CSS box model? Use an example to show the difference between
+   padding and margin.
+
+2. Develop a program that performs following task - Use two images of a bulb in on and off
+   form. Program a toggle button that switches on and off the bulb when clicked.
+   
+3. Create two buttons which are used to create a timely alert and another cancels the
+   event before it's triggered.
+   
+4. In how many ways you can create Java Script objects? Please create a person object by      using different menthods along with mentioning their different properties.
+
+5. What do you mean by JSON object? Show some examples to demonstrate the way JSON can be    used for storing and accessing data using Java Script.
