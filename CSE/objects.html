@@ -1,0 +1,51 @@
+<html>
+<head>Java Script Objects</head>
+<body>
+    <script>
+       //Method-1
+        var first = 'Deepak';
+        var last = 'Uniyal';
+        var greet = function(){
+          console.log('Welcome,'+ first+' '+last);  
+        };
+        
+        //greet();
+        
+        //Method-2
+        //var du = new Object();
+        var du = {};
+        du.first = 'Deepak';
+        du.last = 'Uniyal';
+        du.greet = function(){
+            //console.log('Welcome,'+ du.first+' '+du.last);
+            console.log('Welcome,'+ this.first+','+this.last);
+        };
+        //du.greet();
+        
+        //Method-3
+        var du1 = {
+          first:'Deepak',
+          last:'Uniyal',
+          greet:function(){
+            console.log('Welcome,'+ this.first+','+this.last);  
+          }
+        };
+        
+        //Create a Person using Function and Method-3
+        function createPerson(firstName, lastName){
+            return {
+                first:firstName,
+                last:lastName,
+                greet:function(){
+                    console.log('Welcome,'+ this.first+','+this.last);  
+                }
+            };
+        }
+        
+        var du1 = createPerson('Deepak', 'Uniyal-1');
+        var du2 = createPerson('Deepak', 'Uniyal-2');
+        du1.greet();
+        du2.greet();
+    </script>
+</body>
+</html>
