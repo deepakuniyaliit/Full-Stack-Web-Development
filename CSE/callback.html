@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+//    Without CallBack
+    $('#btn1').click(function(){
+       $('p').hide(1000);
+        alert('Paragraph is hideen!');
+    });
+    
+//    With CallBack
+    $('#btn2').click(function(){
+       $('p').hide(1000, function(){
+           alert('Paragraph is hideen!');
+       });
+    });
+    
+});
+</script>
+</head>
+<body>
+
+<button id="btn1">Hide1</button><br><br>
+<button id="btn2">Hide2</button>
+<p>Paragraph</p>
+</body>
+</html>
