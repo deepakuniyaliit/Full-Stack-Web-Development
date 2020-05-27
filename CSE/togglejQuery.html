@@ -1,0 +1,23 @@
+<html>
+<head>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $('#btn').click(function(){
+              if($('p').css('display') == 'none'){
+                  $('p').show(1000);
+              }
+               else{
+                   $('p').hide(1000);
+               }
+//               $('p').toggle(1000);
+           });
+        });
+    </script>
+    </head>
+<body>
+    <input type="button" id="btn" value="Toggle">
+    <p>First Paragraph</p>
+    <p>Second Paragraph</p>
+</body>
+</html>
