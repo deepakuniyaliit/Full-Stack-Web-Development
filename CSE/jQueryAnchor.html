@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Anchor Tag</title>
+    <style>
+        .test {
+            font-weight: bold;
+            font-size: 100px;
+            font-family: cursive;
+        }
+</style>
+</head>
+<body>
+    <a href="http://jquery.com/">jQuery</a>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('a').click(function(event){
+               alert('Thanks for Visiting!');
+                event.preventDefault();
+                $(this).hide(1000);
+            });
+        });
+    </script>
+</body>
+</html>
